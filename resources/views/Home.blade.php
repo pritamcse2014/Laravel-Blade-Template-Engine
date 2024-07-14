@@ -7,14 +7,18 @@
     <title>Laravel Blade Template</title>
 </head>
 <body>
-    @if($result == 100)
-        <h2>Result is 100.</h2>
-    @elseif($result == 1000)
-        <h2>Result is 1000.</h2>
-    @elseif($result == 100000)
-        <h2>Result is 100000.</h2>
-    @else
-        <h2>Result is not in our Range.</h2>
-    @endif
+    @switch($result)
+        @case(100)
+            <h1>Result is 100.</h1>
+            @break
+        @case(1000)
+            <h1>Result is 1000.</h1>
+            @break
+        @case(100000)
+            <h1>Result is 100000.</h1>
+            @break
+        @default
+            <h1>Result is not in our Range.</h1>
+    @endswitch
 </body>
 </html>
