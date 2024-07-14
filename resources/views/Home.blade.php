@@ -7,6 +7,7 @@
     <title>Laravel Blade Template</title>
 </head>
 <body>
-    <h2>Home</h2>
+    <h1>{{ $message }}</h1>
+    <h2>{{ $result }}</h2>
 </body>
 </html>
