@@ -14,4 +14,4 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{num1}/{num2}', [HomeController::class, 'Home']);
+Route::get('/', [HomeController::class, 'Home']);
