@@ -7,7 +7,14 @@
     <title>Laravel Blade Template</title>
 </head>
 <body>
-    <h1>{{ $message }}</h1>
-    <h2>{{ $result }}</h2>
+    @if($result == 100)
+        <h2>Result is 100.</h2>
+    @elseif($result == 1000)
+        <h2>Result is 1000.</h2>
+    @elseif($result == 100000)
+        <h2>Result is 100000.</h2>
+    @else
+        <h2>Result is not in our Range.</h2>
+    @endif
 </body>
 </html>
