@@ -8,9 +8,9 @@
 </head>
 <body>
     <ul>
-        @for($i=0; $i<=100; $i++)
-            <li>{{ $i }}</li>
-        @endfor
+        @foreach ($data as $eachData)
+            <li> User Name is : {{ $eachData['name'] }} and City is : {{ $eachData['city'] }} </li>
+        @endforeach
     </ul>
 </body>
 </html>
