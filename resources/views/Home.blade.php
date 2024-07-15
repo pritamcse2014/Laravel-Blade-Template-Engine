@@ -1,17 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}" type="text/css">
-    <title>Laravel Blade Template</title>
-</head>
-<body>
-    @include('components.Header')
-    @include('components.Hero')
-    @include('components.Team')
-    @include('components.Footer')
-</body>
-<script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
-</html>
+@extends('Layout.app')
+
+@section('content')
+
+@include('Component.hero')
+@include('Component.howWeDo')
+@include('Component.pricing')
+@include('Component.team')
+@include('Component.newsletter')
+
+@endsection
