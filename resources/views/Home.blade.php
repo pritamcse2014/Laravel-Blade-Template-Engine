@@ -8,14 +8,10 @@
     <title>Laravel Blade Template</title>
 </head>
 <body>
-    <div class="container mt-5">
-        <div class="row d-flex justify-content-center">
-            <div class="col-6">
-                <button class="btn btn-success">Button</button>
-                <img class="w-50" src={{ asset('images/laravel.png') }} alt="Laravel" />
-            </div>
-        </div>
-    </div>
+    @include('components.Header')
+    @include('components.Hero')
+    @include('components.Team')
+    @include('components.Footer')
 </body>
 <script src="{{ asset('js/bootstrap.bundle.js') }}"></script>
 </html>
